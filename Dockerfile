@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-ENV LITECOIN_VERSION=0.16.3
-ENV LITECOIN_CHECKSUM=686d99d1746528648c2c54a1363d046436fd172beadaceea80bdc93043805994
+ENV LITECOIN_VERSION=0.17.1
+ENV LITECOIN_CHECKSUM=9cab11ba75ea4fb64474d4fea5c5b6851f9a25fe9b1d4f7fc9c12b9f190fed07
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://download.litecoin.org/litecoin-${LITECOIN_VERSION}/linux/litecoin-${LITECOIN_VERSION}-x86_64-linux-gnu.tar.gz \
